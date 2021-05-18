@@ -14,122 +14,470 @@
 </head>
 
 <body>
+  <!-- body content ******************************************** -->
+ 
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.top h1{
+    text-align:left;
+    font-size:100px;
+    text-shadow: rgb(165, 42, 42);
+}
 
-  <!-- ******************navbar********************** -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="offers.html">Top Offers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
-          </li>
-         
-             
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+
+.top{
+    background:#948981;
+    padding:30px;
+   
+}
+
+.container2{
+    position:relative;
+    padding:20px 50px;
+
+}
+.container h1{
+    color:#46413b
+}
+.wrapper{
+    position:absolute;
+    top:50%;
+    left:70%;
+    transform:translate(-50%,-50%);
+
+}
+.input{
+    width:500px;
+    border:3px solid#635e5a;
+    background:transparent;
+    padding:15px 30px;
+    border-radius:50px;
+    color:#fc913a;
+    font-size:18px;
+    outline-color:#fc913a;
+
+}
+
+::-webkit-input-placeholder{
+    color:rgb(148, 97, 97);
+    text-transform:uppercase;
+    font-family:"Roboto",sans-serif;
+}
+::-ms-input-placeholder{
+    color:rgb(148, 104, 104);
+    text-transform:uppercase;
+    font-family:"Roboto",sans-serif;
+}
+::-moz-input-placeholder{
+    color:rgb(148, 89, 89);
+    text-transform:uppercase;
+    font-family:"Roboto",sans-serif;
+}
+
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:50px;
+    cursor:pointer;
+    width:110px;
+    height:55px;
+    background:rgb(172, 116, 116);
+    background:#fc913a;
+    border:0;
+    border-radius:50px;
+    outline:none;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.offer{
+    background:radial-gradient(#ad7373,#fffed6);
+    margin-top: 80px;
+   Padding:30px;
+  
+}
+
+
+small{
+    color:#555;
+}
+col-2 .offer-img{
+    padding:50px;
+}
+.column{
+    float:left;
+    width:20%}
+
+
+
+
+.btn{
+    
+    background:transparent;
+    border:1px solid rgb(143, 64, 64);
+    padding:8px 18px;
+    color:rgb(139, 63, 63);
+    font-size:20px;
+    border-radius:30px;
+    margin-top: 20px;
+    cursor:pointer
+
+}
+.container00{
+    width:1160px;
+    height:550px;
+    background:#ccc;
+    margin:120px auto;
+display:flex;
+}
+.col{
+    height:100%;
+    flex:1;
+    color:#fff;
+    box-sizing:border-box;
+    padding:25px;
+}
+.container00 button{
+    background:transparent;
+    border:1px solid #fff;
+    padding:8px 18px;
+    color:#fff;
+    font-size:12px;
+    border-radius:30px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.col1{
+    height:100%;
+    flex:1;
+    color:#fff;
+    box-sizing:border-box;
+    padding:25px;
+}
+.col2{
+    height:100%;
+    flex:1;
+    color:#fff;
+    box-sizing:border-box;
+    padding:25px;
+}
+.col3{
+    height:100%;
+    flex:1;
+    color:#fff;
+    box-sizing:border-box;
+    padding:25px;
+}
+
+    </style>
+
+
+<!-- navbar*************************************** -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+  <div class="container-fluid">
+    <li class="navbar-brand brands" style="list-style: none;"><strong>ShoppingMania</strong></li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="offers.html">Top Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+        </li>
+
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
+
+    <div class="top">
+        <div class="container1">
+        <h1>SHOPPING MANIA</h1>
+
+    </div>
+</div>
+    <!-- <div class="wrapper">
+        <div class="container2">
+            <input type="text" class="input" placeholder="what are you looking for ?">
+            <input type="button" value="Search" class="close-btn">
+            <h1>EXCLUSIVELY MADE ON <em>SHOPPING MANIA</em><br>WITH TOP OFFERS</h1>
+            <h2>"a name you can bank upon"</h2>
+            
+        </div>
+    </div> -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="column1">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10308653/2019/7/29/4b4374d2-0067-40c3-bc30-7a6f2d228df71564401122087-SASSAFRAS-Women-Pink-Maxi-Dress-4111564401120260-1.jpg"
+                        class="offer-img">
+                </div>
+                <div class="column1">
+                    <p> Exclusively available on SHOPPING MANIA </p>
+                    <h1>Solid women cotton wear</h1>
+                    <h3>Key Features</h3>
+
+                    <small> Fabric:Poly creep,
+                    </small>
+                    <small>Pattern:Solid,</small>
+                    <small>Sleeve:Sleeveless,</small><br><br>
+                    <a href=" " class="btn">BUY NOW &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="column">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2314478/2018/9/20/22be69f2-25c7-45d6-9201-9590b9728c531537421228808-Bhama-Couture-Women-Pink-Yoke-Design-Kurta-with-Palazzos-430-1.jpg">
+
+                        <p> <h2>Bhama couture</h2>
+                        <h4> Embroidded kurta with plazzo</h4><br>
+                        
+                        <a href="" class="btn">buy it</a>
+                        
+                        </p>
+                </div>
+                <div class="column">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/7/1/8c2a3fb2-3fa9-412f-939e-21c58ba918321561964033656-1.jpg">
+<p>
+    <h2>Bhama couture</h2>
+        <h4>Women designer kurta with plazzo
+
+        </h4><br>
+        <a href="" class="btn ">buy it </a>
+        
+    
+</p>
+                </div>
+                <div class="column">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/4/9/5a696017-3a09-4719-aff4-4186b3aef96a1617954628045-1.jpg">
+<p>
+    <h2> shani venture</h2>
+        <h4>kurti with trousers and dupatta
+            
+        </h4><br>
+        <a href="" class="btn ">buy it </a>
+        
+    
+</p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/3/18/a9a18c4e-a530-4ffd-9c00-ae964d2ba3eb1616062913575-1.jpg">
+                <p>
+                    <h2>Bhama couture</h2>
+                        <h4>Solid kurta with duppata and pants
+                            
+                        </h4>
+                        <br>
+                        <a href="" class="btn ">buy it </a>
+                        
+                    
+                </p>
+            </div>                                           
+        </div>
+        <div class="column">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/3/27/82c3a07e-abf3-4d0a-ba56-242453b6e24f1616844926026-1.jpg">
+            <p>
+                <h2>Shani venture</h2>
+                    <h4>Embroidded with empire top
+                        
+                    </h4><br>
+                    <a href="" class="btn ">buy it </a>
+                    
+                
+            </p>
+        </div>
+                 
+            
+                
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container00">
+        <div class="col">
+            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/5/13/11237f72-552e-439f-96a4-19d87b2e18411620900224639-Men_DK_16.jpg">
+<button type="button">KNOW MORE</button>
+        </div>
+        <div class="col">
+   <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/5/13/8d0052cf-d9cf-430d-8297-8e34e44386371620900060799-Men_DK_10.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+        <div class="col">
+            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/5/13/da92738e-c16f-4d43-baf5-4609add59e4b1620899621868-Men_DK_02.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+    </div>
+   
+    <div class="container00">
+        <div class="col2">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/6518647/2018/5/23/52a8ca16-5a11-4b48-9522-89abb01cc5af1527052837336-Deyann-Kurta-Payjama-Set-6461527052835748-1.jpg">
+<button type="button">KNOW MORE</button>
+        </div>
+        <div class="col2">
+   <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11200640/2020/3/4/af0e8c16-8314-4a39-b6ab-7aaddc94b0351583303433751-Anouk-Men-Kurtas-6241583303432388-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+        <div class="col2">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10307987/2019/8/14/e4b594a1-bca7-4b94-89df-fe0ccb2e33e61565770344792-Anouk-Men-Maroon-Printed-Straight-Short-Kurta-76315657703431-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+    </div>
+    
+    <div class="container00">
+        <div class="col1">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11752878/2020/6/10/a672d30d-b5a4-4b76-be0c-cc4872e8cc961591777889561-MANQ-Men-Shirts-4011591777887904-4.jpg">
+<button type="button">KNOW MORE</button>
+        </div>
+        <div class="col1">
+   <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10184939/2019/8/19/00128255-5d25-4608-83cb-a4c2a27329f61566199701210-Taavi-Men-Kurtas-7171566199699961-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+        <div class="col1">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11200640/2020/3/4/af0e8c16-8314-4a39-b6ab-7aaddc94b0351583303433751-Anouk-Men-Kurtas-6241583303432388-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+    </div>
+    
+    <div class="container00">
+        <div class="col3">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1725331/2019/1/22/778551f3-f9dd-47dd-8cfa-e168285f60881548138957275-Black-coffee-Grey-Formal-Trousers-5021548138954810-1.jpg">
+<button type="button">KNOW MORE</button>
+        </div>
+        <div class="col3">
+   <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13503794/2021/4/23/6f4fba2e-ba86-44b4-be96-e1929458e1c41619172933075-Park-Avenue-Men-Grey-Super-Slim-Fit-Checked-Formal-Trousers--1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+        <div class="col3">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13620478/2021/3/25/87d9fc87-4c20-4e63-b1c4-808ad3f3d7921616653401123-DENNISON-Men-Black-Smart-Tapered-Fit-Solid-Cropped-Regular-T-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+    </div>
+
+    <div class="container00">
+        <div class="col4">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/9/16/25f5b6a7-ce25-4e66-8a61-3aa2037b6c741600207614629-1.jpg">
+<button type="button">KNOW MORE</button>
+        </div>
+        <div class="col4">
+   <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10856160/2019/11/5/f0172470-408a-4b8b-a1e5-045bd98a5f8b1572938035104-SASSAFRAS-Women-Dresses-9581572938032856-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+        <div class="col4">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13435636/2021/1/22/f6914028-82fa-4187-90a4-1867d8eac3a11611296894583IndoEraGreenEmbroideredkurtaPalazzowithDupattaSetsDressesDee1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+    </div>
+    <div class="container00">
+        <div class="col5">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/11/12/abaa799f-e880-4d18-908a-ead3fa7b9f2b1573542511153-1.jpg">
+<button type="button">KNOW MORE</button>
+        </div>
+        <div class="col5">
+   <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11364402/2020/1/27/e48cf4ef-a562-46fd-937f-edcfb82ff12a1580104205123-SASSAFRAS-Women-Blue-Printed-A-Line-Dress-5431580104203018-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+        <div class="col5">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11364126/2020/1/28/45359a1c-5240-4837-8878-05f7f3feee4d1580197901836-SASSAFRAS-Women-Green-Solid-A-Line-Dress-9491580197899621-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+    </div>
+    <div class="container00">
+        <div class="col6">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2477343/2018/2/22/11519301743689-Libas-Women-Green-Woven-Design-Pathani-Kurta-4531519301743438-1.jpg">
+<button type="button">KNOW MORE</button>
+        </div>
+        <div class="col6">
+   <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7186140/2018/10/3/e74e1ad0-7e16-47f9-a6b7-74b3cde055d01538569313154-Anouk-Women-Fuchsia-Printed-Kurta-with-Trousers--Dupatta-869-1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+        <div class="col6">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10942370/2019/11/19/3cfdd561-ad23-4ee4-8187-de635252a15e1574150056042-Anubhutee-Women-Navy-Blue--Off-White-Yoke-Design-Kurta-with--1.jpg">
+<button type="button">KNOW MORE</button>
+
+        </div>
+    </div>
+    
+
+
+
+</column>
   <!-- **********************footer****************************************** -->
-  <!-- Footer -->
-  <footer class="page-footer font-small blue pt-4">
-
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left" style="background-color: rgb(133, 133, 155);">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-
-          <!-- Content -->
-          <h5 class="text-uppercase">Footer Content</h5>
-          <p>Here you can use rows and columns to organize your footer content.</p>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-          <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-          <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
+  <!-- **********************footer****************************************** --> 
+  <hr>
+  <footer class="container py-5" style="background-color: rgb(255, 255, 255);width: 100vw;margin-left: 2rem;margin-right: -9rem;">
+    <div class="row">
+      
+      <div class="col-6 col-md">
+        <h5>Shop From Home</h5>
+        <ul class="list-unstyled text-small" >
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">Men</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">women</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">Kids</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">Top Offers</a><span class="badge rounded-pill bg-danger">NEW</span></li>
+          
+        </ul>
       </div>
-      <!-- Grid row -->
-
+      <div class="col-6 col-md">
+        <h5>Connect Through </h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" style="text-decoration: none;"  href="#">Facebook </a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="#">Instagram</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="#">Twitter</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="#">Linkdin</a></li>
+        </ul>
+      </div>
+      
+      
     </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background-color: black;">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-
   </footer>
+  <!-- Copyright -->
+<div class="footer-copyright text-center py-3" style="background-color: black;color: rgb(251, 252, 253);width: 100vw;   
+" >copyright © 2021 ShoppingMania.com 
+  <p>All rights reserved</p>
+  
+</div>
+<!-- Copyright -->
   <!-- Footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

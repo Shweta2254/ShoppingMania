@@ -10,15 +10,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>Hello, world!</title>
+  <title>Shopping Mania</title>
 </head>
 
 <body>
+ 
 
   <!-- ******************navbar********************** -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <li class="navbar-brand brands" style="list-style: none;"><strong>ShoppingMania</strong></li>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="about.html">About</a>
@@ -35,10 +36,10 @@
             <a class="nav-link" aria-current="page" href="offers.html">Top Offers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  active" aria-current="page" href="contact.html">Contact</a>
+            <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
           </li>
-         
-             
+
+
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,90 +49,43 @@
     </div>
   </nav>
 
-  <!-- **********************footer****************************************** -->
-  <!-- Footer -->
-  <footer class="page-footer font-small blue pt-4">
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left" style="background-color: rgb(144, 144, 158);">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-
-          <!-- Content -->
-          <h5 class="text-uppercase">Footer Content</h5>
-          <p>Here you can use rows and columns to organize your footer content.</p>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-          <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-          <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
+  <!-- **********************footer****************************************** --> 
+  <hr>
+  <footer class="container py-5" style="background-color: rgb(255, 255, 255);width: 100vw;margin-left: 2rem;margin-right: -9rem;">
+    <div class="row">
+      
+      <div class="col-6 col-md">
+        <h5>Shop From Home</h5>
+        <ul class="list-unstyled text-small" >
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">Men</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">women</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">Kids</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="offers.html">Top Offers</a><span class="badge rounded-pill bg-danger">NEW</span></li>
+          
+        </ul>
       </div>
-      <!-- Grid row -->
-
+      <div class="col-6 col-md">
+        <h5>Connect Through </h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" style="text-decoration: none;"  href="#">Facebook </a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="#">Instagram</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="#">Twitter</a></li>
+          <li><a class="link-secondary" style="text-decoration: none;" href="#">Linkdin</a></li>
+        </ul>
+      </div>
+      
+      
     </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background-color: black;">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-
   </footer>
-  <!-- Footer -->
+  <!-- Copyright -->
+<div class="footer-copyright text-center py-3" style="background-color: black;color: rgb(251, 252, 253);width: 100vw;   
+" >copyright © 2021 ShoppingMania.com 
+  <p>All rights reserved</p>
+  
+</div>
+<!-- Copyright -->
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
