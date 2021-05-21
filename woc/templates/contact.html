@@ -65,7 +65,8 @@
                               <div class="p-2 w-1/2">
                                 <div class="relative">
                                   <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                                  <form action="POST">
+                                  <form method="post" action="/contact" >
+                                    {% csrf_token %}
                                   <input type="text" id="name" name="name" class="w-full bg-red-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                 </div>
                               </div>
@@ -83,7 +84,7 @@
                                 </div>
                               </div>
                               <div class="p-2 w-full">
-                                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">SUBMIT</button>
+                                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">SUBMIT</button>
                               </div>
                               <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                                 <a class="text-indigo-500 emali" href="">shopping.mania@gmail.com</a>
