@@ -34,4 +34,4 @@ This project mainly deals with developing an e-commerce website for online produ
 ## PPT Link:
 [PPT](https://mnnitedu-my.sharepoint.com/:p:/g/personal/shweta_20205159_mnnit_ac_in/ET3WcgIH9XpMgwq4Rex5POIBLZyqwHcRNvRkLaF9e4bjMw?e=dLM8Bi)
 ## Video Link:
-[Project Video](link)
+[Project Video](https://drive.google.com/file/d/1Uef6LTl5HMPndFg68ZNzG3Rhp6FdpJ6f/view?usp=drivesdk)
